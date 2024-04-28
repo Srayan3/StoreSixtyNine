@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+.banner-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.banner {
+    width: 92%;
+    height: 400px;
+    margin-top: 30px;
+    border-radius: 24px;
+    background: linear-gradient(258.04deg,#f1edec 20.63%,#f6d6e1 36.66%,#f4eae9 55.84%,#fdd1d0 73.18%);
+    display: flex;
+    justify-content: space-between;
+}
+.banner > * {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.text-part-banner {
+    width: 60%;
+}
+.text-part-banner > * {
+    margin-left: 100px;
+}
+.text-part-banner > h1 {
+    font-size: 2.2vw;
+    margin-top: 120px;
+}
+.text-part-banner > h2 {
+    font-size: 1.5vw;
+}
+.view-collection-button {
+    border: none;
+    background: #F03827;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.banner-image-parent {
+    width: 40%;
+    overflow: hidden;
+}
+.banner-image {
+    margin-top: -40px;
+    margin-left: 50px;
+}
+.category-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.categories {
+    width: 80%;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    touch-action: auto;
+    align-items: flex-start;
+    scrollbar-width: none;
+}
+.category {
+    width: 84px;
+    margin-left: 80px;
+}
+.category:first-child {
+    margin-left: 0;
+}
+.category-name {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.category-image {
+    width: 84px;
+    height: 84px;
+    background: #6FB935;
+    color: white;
+    position: relative;
+    border-radius: 26px;
+}
+.category-image > img {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigator-buttons {
+    width: 20px;
+}
+#scroll {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 25px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 9.54px 9.29266px rgba(0,0,0,0.03),0 9px 6.42626px rgba(0,0,0,0.05),0 4px 10px rgba(0,0,0,0.09);
+    background: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#scroll:first-child {
+    margin-left: 0;
+    margin-right: 20px
+}
