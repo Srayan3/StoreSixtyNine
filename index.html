@@ -34,7 +34,7 @@
         </div>
     </section>
     <section class="category-parent">
-        <button  onclick="scrollr()" id="scroll"><svg class="navigator-buttons nav-btn-one" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg></button>
+        <button  onclick="scrollr()" class="scroll"><svg class="navigator-buttons nav-btn-one" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg></button>
         <div class="categories">
             <div class="category">
                 <div class="category-image">
@@ -163,7 +163,7 @@
                 <p class="category-name">Gift Card</p>
             </div>
         </div>
-        <button onclick="scrolll()" id="scroll"><svg class="navigator-buttons" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>
+        <button onclick="scrolll()" class="scroll"><svg class="navigator-buttons" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>
     </section>
     <section class="collections_section">
         <div class="collections_div">
@@ -188,27 +188,86 @@
     <section class="products_section">
         <div class="products_parent">
             <h1 class="category_title">Gift Cards</h1>
-            <div class="products">
-                <div class="product">
-                    <img src="./img/valorant-banner.png" alt="">
-                    <p>Valorant Points</p>
+            <div class="product_flex">
+                <button class="scroll-products1 scroll" onclick="scrollrproducts()"><svg class="navigator-buttons nav-btn-one" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg></button>
+                <div class="products">
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/steam-banner.png" alt="">
+                        <p>Steam Wallet</p>
+                    </div>
                 </div>
-                <div class="product">
-                    <img src="./img/valorant-banner.png" alt="">
-                    <p>Valorant Points</p>
+                <button onclick="scrolllproducts()" class="scroll-products2 scroll"><svg class="navigator-buttons" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>
+            </div>
+        </div>
+    </section>
+    <section class="products_section">
+        <div class="products_parent">
+            <h1 class="category_title">Subscripsions</h1>
+            <div class="product_flex">
+                <button class="scroll-products1 scroll" onclick="scrollrproducts2()"><svg class="navigator-buttons nav-btn-one" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path></svg></button>
+                <div class="products products2">
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
+                    <div class="product">
+                        <img src="./img/xbox-banner.png" alt="">
+                        <p>Xbox Game Pass</p>
+                    </div>
                 </div>
-                <div class="product">
-                    <img src="./img/valorant-banner.png" alt="">
-                    <p>Valorant Points</p>
-                </div>
-                <div class="product">
-                    <img src="./img/valorant-banner.png" alt="">
-                    <p>Valorant Points</p>
-                </div>
-                <div class="product">
-                    <img src="./img/valorant-banner.png" alt="">
-                    <p>Valorant Points</p>
-                </div>
+                <button onclick="scrolllproducts2()" class="scroll-products2 scroll"><svg class="navigator-buttons" style="color: black;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path></svg></button>
             </div>
         </div>
     </section>
@@ -220,6 +279,20 @@
         function scrollr(){
             var left = document.querySelector(".categories");
             left.scrollBy(-150, 0);
+        }
+        var width = window.screen.availWidth;
+        console.log(width);
+        var result = (20 / 100) * width;
+        console.log(result);
+        var scrollWidth = result + 16; 
+        function scrolllproducts2(){
+            var left = document.querySelector(".products2");
+            left.scrollBy(scrollWidth, 0);
+        }
+        function scrollrproducts2(){
+
+            var left = document.querySelector(".products2");
+            left.scrollBy(-scrollWidth, 0);
         }
     </script>
 </body>

@@ -96,7 +96,7 @@
 .navigator-buttons {
     width: 20px;
 }
-#scroll {
+.scroll {
     height: 40px;
     width: 40px;
     position: relative;
@@ -108,7 +108,7 @@
     margin-left: 20px;
     cursor: pointer;
 }
-#scroll:first-child {
+.scroll:first-child {
     margin-left: 0;
     margin-right: 20px
 }
@@ -167,9 +167,12 @@
     color: #97A4B2;
 }
 .products_section {
+    margin-top: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.products_section:first-child {
     margin-top: 50px;
 }
 .products_parent {
@@ -182,20 +185,59 @@
     font-style: normal;
     font-size: 32px;
 }
+.product_flex {
+    position: relative;
+}
+.scroll-products1 {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    z-index: 9;
+}
+.scroll-products1 {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.scroll-products2 {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    z-index: 9;
+}
 .products {
-    width: 100%;
+    margin-left: -20px;
+    width: calc(4 * (20vw - 10px) + 50px); /* Width for four elements plus margins */
     display: flex;
     overflow-x: auto; /* Allow horizontal overflow */
+    scrollbar-width: none;
+    margin-top: 40px;
+}
+.products2 {
+    margin-left: -20px;
+    width: calc(4 * (20vw - 10px) + 50px); /* Width for four elements plus margins */
+    display: flex;
+    overflow-x: auto; /* Allow horizontal overflow */
+    scrollbar-width: none;
+    margin-top: 40px;
 }
 .product {
-    width: calc(20vw - 10px); /* Set width to 20% of viewport width minus the margin */
-    margin-left: 10px; /* Adjust margin between elements */
+    width: calc(20vw - 40px); /* Set width to 20% of viewport width minus the margin */
+    margin-left: 50px; /* Adjust margin between elements */
     border-radius: 20px;
     overflow: hidden;
     flex-shrink: 0; /* Prevent shrinking */
+    position: relative;
+    cursor: pointer;
 }
 .product:first-child {
-    margin-left: 0; /* Remove margin for first element */
+    margin-left: 20px; /* Adjust margin for the first element */
+}
+.product:last-child {
+    margin-right: 20px; /* Adjust margin for the last element */
 }
 .product > img {
     width: 100%;
@@ -238,5 +280,13 @@
     }
     .text-part-banner > h1 {
         font-size: 3vw
+    }
+    .products {
+        width: 100%;
+        margin-left: -8px;
+    }
+    .product {
+        width: calc(20vw - 15px); /* Set width to 20% of viewport width minus the margin */
+        margin-left: 47px;
     }
 }
