@@ -178,6 +178,7 @@
 }
 .products_parent {
     width: 80%;
+    position: relative;
 }
 .category_title {
     text-align: center;
@@ -188,6 +189,13 @@
 }
 .product_flex {
     position: relative;
+}
+.discorver_more_products {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
 }
 .scroll-products1 {
     position: absolute;
@@ -237,7 +245,7 @@
 .product:first-child {
     margin-left: 20px; /* Adjust margin for the first element */
 }
-.product:last-child {
+.section .product:first-child {
     margin-right: 20px; /* Adjust margin for the last element */
 }
 .product > img {
@@ -298,10 +306,44 @@
     font-style: normal;
     text-align: center;
 }
+.payment_methods_section {
+    width: 100%;
+    margin-top: 50px;
+}
+.payment_methods_title {
+    color: black;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+.payment_methods_child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.payment_methods {
+    width: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.payment_method {
+    width: 50px;
+    /* margin-left: 20px; */
+}
 /* media */
 @media screen and (max-width: 1280px) {
     .collections_div {
         width: 90%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .aboutUsDetail {
+        width: 95%;
     }
 }
 @media screen and (max-width: 1024px) {
