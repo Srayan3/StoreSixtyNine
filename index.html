@@ -21,6 +21,42 @@
             <a href="login"><button class="login-button">Login</button></a>
         </div>
     </nav>
+    <div class="searchbar-xs-parent">
+        <div class="searchbar-xs">
+            <form action="search" class="searchform" method="get"><input type="text" placeholder="Search in Store69" class="searchfeild"><button class="searchbutton" type="submit"><svg style="color: white;" class="search-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path></svg></button></form>
+        </div>
+    </div>
+    <div class="bottom-nav-parent">
+        <div class="bottom-nav">
+            <a href="./">
+                <svg height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.5 20V11H3L12 5L21 11H17.5V20H14.5V16.5C14.5 15.6716 13.8284 15 13 15H11C10.1716 15 9.5 15.6716 9.5 16.5V20H6.5Z" fill="#000000" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <a href="./">
+                <svg fill="#000000" height="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="0 0 459.334 459.334" xml:space="preserve">
+                <g>
+                    <g>
+                        <g>
+                            <path d="M175.216,404.514c-0.001,0.12-0.009,0.239-0.009,0.359c0,30.078,24.383,54.461,54.461,54.461
+                            s54.461-24.383,54.461-54.461c0-0.12-0.008-0.239-0.009-0.359H175.216z"/>
+                			<path d="M403.549,336.438l-49.015-72.002c0-22.041,0-75.898,0-89.83c0-60.581-43.144-111.079-100.381-122.459V24.485
+                            C254.152,10.963,243.19,0,229.667,0s-24.485,10.963-24.485,24.485v27.663c-57.237,11.381-100.381,61.879-100.381,122.459
+                            c0,23.716,0,76.084,0,89.83l-49.015,72.002c-5.163,7.584-5.709,17.401-1.419,25.511c4.29,8.11,12.712,13.182,21.887,13.182
+                            H383.08c9.175,0,17.597-5.073,21.887-13.182C409.258,353.839,408.711,344.022,403.549,336.438z"/>
+                		</g>
+                	</g>
+                </g>
+             </svg>
+            </a>
+        <a href="./">
+            <svg fill="#000000" height="40px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 28q0 0.832 0.576 1.44t1.44 0.576h20q0.8 0 1.408-0.576t0.576-1.44q0-1.44-0.672-2.912t-1.76-2.624-2.496-2.144-2.88-1.504q1.76-1.088 2.784-2.912t1.024-3.904v-1.984q0-3.328-2.336-5.664t-5.664-2.336-5.664 2.336-2.336 5.664v1.984q0 2.112 1.024 3.904t2.784 2.912q-1.504 0.544-2.88 1.504t-2.496 2.144-1.76 2.624-0.672 2.912z"></path>
+            </svg>
+        </a>
+        </div>
+    </div>
     <!-- navbar -->
     <section class="banner-parent">
         <div class="banner">
@@ -171,14 +207,14 @@
             <h1 class="title_one">Store69 Collection</h1>
             <div class="grid">
                 <div class="image-grid">
-                    <img class="image1" src="./img/valorant-banner.png" alt="">
-                    <img class="image2" src="./img/valorant-banner.png" alt="">
-                    <img class="image3" src="./img/valorant-banner.png" alt="">
-                    <img class="image4" src="./img/valorant-banner.png" alt="">
-                    <img class="image5" src="./img/valorant-banner.png" alt="">
-                    <img class="image6" src="./img/valorant-banner.png" alt="">
-                    <img class="image7" src="./img/valorant-banner.png" alt="">
-                    <img class="image8" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
+                    <img class="image-col" src="./img/valorant-banner.png" alt="">
                 </div>
             </div>
             <div class="discover_all_parent">
@@ -381,6 +417,15 @@
         var result = (20 / 100) * width;
         console.log(result);
         var scrollWidth = result + 16; 
+        function scrolllproducts(){
+            var left = document.querySelector(".products");
+            left.scrollBy(scrollWidth, 0);
+        }
+        function scrollrproducts(){
+
+            var left = document.querySelector(".products");
+            left.scrollBy(-scrollWidth, 0);
+        }
         function scrolllproducts2(){
             var left = document.querySelector(".products2");
             left.scrollBy(scrollWidth, 0);
