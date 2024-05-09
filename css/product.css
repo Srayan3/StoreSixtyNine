@@ -1,0 +1,118 @@
+.container_parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.image-part {
+    width: 46%;
+}
+.product-image-parent {
+    width: 100%;
+    margin-top: 50px;
+}
+.product-logo {
+    width: 100%;
+    border-radius: 24px;
+}
+.detail-part {
+    width: 46%;
+    margin-top: 50px;
+}
+.directory {
+    color: grey;
+}
+.product-name {
+    font-weight: 900;
+    font-size: 30px;
+}
+.short-description-parent {
+    background: #f5f5f5;
+    margin-top: 10px;
+    padding: 40px 30px 40px 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: bold;
+}
+.selector {
+    width: 100%;
+}
+label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+#product-selector {
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 5px;
+    border-radius: 7px;
+    border: 2px solid #97A4B2;
+    outline: none;
+    margin-top: 5px;
+}
+.buy-now {
+    background-color: #F03827;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 7px;
+    display: none;
+    cursor: pointer;
+}
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.description > p {
+    width: 80%;
+    border-top: 2px solid #DDDDDD;
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-weight: 200;
+}
+.strong {
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* media */
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+    .description > p {
+        width: 95%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        display: block;
+    }
+    .image-part {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .product-image-parent {
+        width: 80%;
+    }
+    .detail-part {
+        width: 100%;
+    }
+}
