@@ -1,0 +1,89 @@
+.main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 80%;
+    margin-top: 50px;
+}
+.order {
+    padding: 20px;
+    border: 2px solid #dddddd;
+    background: #fefefe;
+}
+h2 {
+    font-weight: 900;
+}
+h2 > span {
+    color: #EB3726;
+}
+table {
+    width: 100%;
+    margin-top: 15px;
+}
+tr > td, th {
+    text-align: right;
+    font-size: 17px;
+}
+tr > td:first-child, th:first-child {
+    text-align: left;
+}
+.invoice {
+    margin-top: 50px;
+}
+.required {
+    color: red;
+}
+.label {
+    display: block;
+    font-size: 19px;
+    font-weight: 400px;
+    margin-top: 10px;
+}
+.input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #dddddd;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 19px;
+    border-radius: 12px;
+}
+.payment-info {
+    margin-top: 30px;
+}
+.payment-option {
+    display: flex;
+    /* cursor: pointer; */
+    margin-top: 7px;
+}
+#payment-methodB, #payment-methodN, #payment-methodC {
+    accent-color: #EB3726;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#payment-label {
+    cursor: pointer;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.ptc {
+    width: 100%;
+    background: #EB3726;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 17px;
+    display: none;
+}
+/* media */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
